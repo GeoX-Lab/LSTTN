@@ -29,7 +29,13 @@ $ pip install -r requirements.txt
 
 Training the model is handled by the `main.py` script. All the configurations related to pretraining and forecasting is provided in `/configs`. 
 
+You can simply import CFG from corresponding config files in `\main.py` and run it for training.
 
+```
+from configs.PEMS04 import CFG
+
+launch_training(CFG)
+```
   
 ### Citation information
 If our repo is useful to you, please cite our published paper as follow:
